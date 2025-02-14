@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock, Timer, Stopwatch & Alarm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Function Clock</h1>
+
+        <!-- Digital Clock -->
+        <div class="section">
+            <h2>Current Time</h2>
+            <p id="clock"></p>
+        </div>
+
+        <!-- Stopwatch -->
+        <div class="section">
+            <h2>Stopwatch</h2>
+            <p id="stopwatch">00:00:00</p>
+            <button id="stopwatch-start">Start</button>
+            <button id="stopwatch-pause">Pause</button>
+            <button id="stopwatch-reset">Reset</button>
+        </div>
+
+        <!-- Timer -->
+        <div class="section">
+            <h2>Timer</h2>
+            <input type="number" id="timerInput" placeholder="Enter seconds">
+            <p id="timerDisplay">00:00</p>
+            <button id="timer-start">Start</button>
+            <button id="timer-pause">Pause</button>
+            <button id="timer-reset">Reset</button>
+        </div>
+
+        <!-- Alarm -->
+        <div class="section">
+            <h2>Alarm</h2>
+            <input type="time" id="alarmTime">
+            <button id="alarm-set">Set Alarm</button>
+            <p id="alarmStatus"></p>
+            <audio id="alarmSound" src="alarm.mp3"></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
